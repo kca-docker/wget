@@ -4,6 +4,7 @@ ARG WORKDIR=/usr/bin/image
 FROM docker.io/alpine:3
 ARG WORKDIR
 
+RUN mkdir -p ${WORKDIR}
 COPY *.txt ${WORKDIR}
 WORKDIR ${WORKDIR}
 

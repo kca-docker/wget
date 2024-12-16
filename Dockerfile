@@ -12,4 +12,5 @@ WORKDIR ${WORKDIR}
 RUN apk add --no-cache wget
 
 # Print hint to stdout
-ENTRYPOINT ["wget", "--no-verbose", "--tries=1", "--spider"]
+#ENTRYPOINT ["wget", "--no-verbose", "--tries=1", "--spider"]
+ENTRYPOINT ["/usr/bin/env", "bash"]

@@ -13,4 +13,4 @@ RUN apk add --no-cache wget
 
 # Print hint to stdout
 #ENTRYPOINT ["wget", "--no-verbose", "--tries=1", "--spider"]
-CMD ["tail", "-f", "/dev/null"]
+CMD ["sleep"]
